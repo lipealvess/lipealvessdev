@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#424242;
+            color: aliceblue;
+            font-size: 18px;
+        }
+        .nome{
+            width: 400px;
+        }
+        .email{
+            width: 400px;
+        }
+        input{
+            height: 30px;
+            font-size: 18px;
+        }
+
+    </style>
+    <script>
+        function funcao1()
+{
+alert("Obrigado");
+}
+    </script>
+
+</head>
+<body>
+    <p>Nome</p>
+    <input type="text" class="nome" required/></input>
+    <p>Celular/Telefone</p>
+    <input type="number" class="tel" required/></input>
+    <p>Email</p>
+    <input type="email" class="email" required/></input>
+    <p>Comentário</p>
+    <textarea class="msg" name="msg" rows="4" cols="50"></textarea>
+    <input type="button" onclick="funcao1()" value="Enviar">
+</body>
+</html>

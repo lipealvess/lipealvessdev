@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Paciente</title>
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    
+</head>
+<title>Cadastro</title>
+<body> 
+    <form action="cadastro.php" method="post"></form>
+    <h1>Cadastro Cliente</h1>
+    <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label for="nome">Nome </label>
+        <input class="teste1" type="text" id="nome"required />
+        <label for="sobrenome">Sobrenome </label>
+        <input class="teste2" type="text" id="sobrenome" />
+        <label for="data_de_nascimento">Data de Nascimento </label>
+        <input type="date" id="data_de_nascimento"required/>
+        <label for="cpf">CPF </label>
+        <input minlength="11" maxlength="11" placeholder="000.000.000-00" type="text" id="cpf" required />
+        <label for="genero">Gênero </label>
+          <select class="genero">
+            <option value="Selecione">Selecione</option>
+            <option value="m">M</option>
+            <option value="f">F</option>
+          </select>
+        <label>Estado Civil</label>
+        <select class="estado_civil">
+            <option value="selecione">Selecione</option>
+            <option value="casado">Casado(a)</option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+        </select>
+        <label for="telefone">Telefone </label>
+        <input type="tel" id="telefone" />
+        <label for="celular">Celular </label>
+        <input type="tel" id="celular"/><br>
+        <label for="email">Email</label>
+        <input class="teste3" type="email">
+        
+        
+
+    </fieldset>
+
+<fieldset>
+    <legend>Endereço</legend>
+        <label for="rua">Rua </label>
+        <input class="teste4" type="text" id="rua" />
+        <label class="numero" for="numero">N° </label>
+        <input class="teste5" maxlength="6" type="text" id="numero" />
+        <label for="bairro">Bairro </label>
+        <input type="text" id="bairro" />
+        <label for="cidade">Cidade </label>
+        <input type="text" id="cidade" />
+        <label for="uf">UF </label>
+        <select id="UF" name="UF">
+            <option value="">Selecione</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espirito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select><br>
+        <label for="complemento">Complemento </label>
+        <input class="teste6" type="text" id="complemento" />
+        <label class="teste7" for="cep">CEP </label>
+        <input type="number" id="cep" />
+</fieldset>
+
+        <fieldset>
+            <legend>Dados do Medicamento</legend>
+
+            <label for="principio_ativo">Princípio Ativo</label>
+            <select id="principioativo">
+                <option>Selecione</option>
+                <option value="abatacepte">ABACEPTE</option>
+                <option value="acido_zoledronico">ACIDO ZOLEDRONICO</option>  
+                <option value="ACETADO_FLUDROCORTISONA" />ACETADO FLUDROCORTISONA</option>
+                <option value="ACETATO_DE_ABIRATERONA" />ACETATO DE ABIRATERONA</option>
+                <option value="ACETATO_DE_CASPOFUNGINA" />ACETATO DE CASPOFUNGINA</option>
+                <option value="ACETATO_DE_DEGARELIX" />ACETATO DE DEGARELIX</option>
+                <option value="ACETATO_DE_LANREOTIDA" />ACETATO DE LANREOTIDA</option>
+                <option value="ACETATO_DE_LEUPRORRELINA" />ACETATO DE LEUPRORRELINA</option>
+                <option value="ACETATO_DE_TERLIPRESSINA" />ACETATO DE TERLIPRESSINA</option>
+               <option value="ADALIMUMABE" />ADALIMUMABE</option>
+                <option value="AFATINIB" />AFATINIB</option>
+                <option value="AFLIBERCEPTE" />AFLIBERCEPTE</option>
+                <option value="ALBUMINA_HUMANA" />ALBUMINA HUMANA (Albumax)</option>
+                <option value="ALFADARBEPOETINA" />ALFADARBEPOETINA</option>
+                <option value="ALFAEPOETINA" />ALFAEPOETINA</option>
+                <option value="ALFATIROTROPINA" />ALFATIROTROPINA</option>
+                <option value="ALTEPLASE" />ALTEPLASE</option>
+                <option value="AMBRISENTANA"/>AMBRISENTANA</option>
+                <option value="ANASTROZOL"/>ANASTROZOL </option>
+                <option value="ANFOTERICINA_B_LIPOSSOMAL" />ANFOTERICINA B LIPOSSOMAL</option>
+                <option value="APREPITANO" />APREPITANO</option>
+                <option value="AZACITIDINA" />AZACITIDINA</option>
+                <option value="AZATIOPRINA" />AZATIOPRINA</option>
+                
+            </select>
+                <label for="classe_terapeutica">Classe Terapêutica</label>
+                <select id="classe_terapeutica">
+                <option>Selecione</option>                    
+                <option value="antivirais" />Antivirais</option>
+                <option value="Antidepressivos" />Antidepressivos</option>
+                <option value="Antiulcerosos"/>Antiulcerosos</option>
+                <option value="Antieméticos"/>Antieméticos</option>
+                <option value="Antivertiginosos"/>Antivertiginosos</option>
+                <option value="Antilipemicos"/>Antilipemicos</option>
+                <option value="Manutenção das articulações "/>Manutenção das articulações</option>
+                <option value="Vasoconstritores"/>Vasoconstritores</option>
+                <option value="Anticonvulsivantes"/>Anticonvulsivantes</option>
+                <option value="Descongestionantes nasais "/>Descongestionantes nasais</option>
+                <option value="Anticoncepcionais "/>Anticoncepcionais</option>
+                <option value="Eletrolitos "/>Eletrolitos</option>
+                <option value="Mucolíticos "/> Mucolíticos</option>
+                <option value="Fitoterápicos "/>Fitoterápicos</option>
+                <option value="Expectorantes "/>Expectorantes</option>
+                <option value="Broncodilatadores "/>Broncodilatadores</option>
+                <option value="Corticosteroides Sistemicos "/>Corticosteroides Sistemicos</option>
+                <option value=" Anticoagulantes "/>Anticoagulantes</option>
+                <option value="Ansiolíticos "/>Ansiolíticos</option>
+                <option value="Antiácidos "/>Antiácidos</option>
+                <option value=" Antitérmicos "/>Antitérmicos</option>
+                <option value="Antiasmáticos "/>Antiasmáticos</option>
+                <option value="Anestésicos "/>Anestésicos</option>
+                <option value="Antivaricosos "/>Antivaricosos</option>
+                <option value="Hormônios"/>Hormônios</option>
+                <option value="Anti-hipertensivos"/>Anti-hipertensivos</option>
+                <option value="Vasodilatadores"/>Vasodilatadores</option>
+                <option value="Sedativos"/>Sedativos</option>
+                <option value="Hipnóticos"/>Hipnóticos</option>
+                <option value="Anticólica"/>Anticólica</option>
+                </select>
+
+                <label for="tipo_do_medicamento">Tipo do Medicamento</label>
+                <select id="tipo_do_medicamento">
+                    <option>Selecione</option>
+                    <option value="Medicamento Alopático">Medicamento Alopático</option>
+                    <option value="Medicamento Homeopático">Medicamento Homeopático</option>
+                    <option value="Medicamento Similar">Medicamento Similar</option>
+                    <option value="Medicamento Genérico">Medicamento Genérico</option>
+                    <option value="Medicamento de Referência">Medicamento de Referência</option>
+                    <option value="Medicamento Manipulado">Medicamento Manipulado</option>
+                </select><br>
+               
+                <label for="dosagem_min">Dosagem Mínima</label>
+                <input class="teste8" type="number" id="dosagem_min" /></input><br>
+                <label for="dosagem_max">Dosagem Máxima</label>
+                <input class="teste9" type="number" id="dosagem_max" /></input><br>
+                <label for="unidade_medida">Unidade de Medida</label>                
+                <select class="Unidade_de_Medida">
+                    <option>Selecione</option>                    
+                    <option value="mcg" />Mcg(Micrograma)</option>
+                    <option value="g" />G(Grama)</option>
+                    <option value="ml"/>Ml(Miligrama)</option>
+                    <option value="unidades_internacionais"/>UI(Unidades Internacionais)</option>
+                    <option value="un"/>Un(Unidade)</option></select>
+             </fieldset>
+
+             <fieldset>
+                <legend>Livro Psicotrópico</legend>
+
+                <label for="portaria_lista">Portaria/Lista</label>
+                <input type="text" id="portaria_lista"></input>
+                </fieldset>
+                <fieldset>
+                    <legend>Médico Responsável</legend>
+    
+                    <label for="medico">Nome</label>
+                    <input class="teste10" type="text" id="medico" required></input>
+                    <label for="crm">CRM</label>
+                    <input class="teste11" type="text" id="crm"required></input>
+
+            </fieldset>
+
+            <fieldset class="fidelidade">
+                <legend>Clube Fidelidade</legend>
+                <input type="checkbox" value="Ouro" />Cliente Ouro</input>
+                <br>
+                <input type="checkbox" value="prata" />Cliente Prata</input>
+                <br>
+                <input type="checkbox" value="Bronze" />Cliente Bronze</input>
+                <br>
+                <label class="pontuacao" for="pontos">Pontuacão:</label> 
+                <input type="number" value="pontos_resgate"></input>
+
+
+
+            </fieldset>
+
+            <fieldset class1="caixa_msg">
+                <legend>Observações</legend>
+	        <textarea id="msg" name="msg" rows="4" cols="50"></textarea>
+	        <br>
+	        <input type="reset" value="Reset">
+	        <input type="submit" value="Enviar">    
+            </fieldset> 
+
+
+
+</fieldset>
+    
+</body>
+</html>
